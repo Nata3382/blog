@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Post Suggestion</title>
+  </head>
+  <body>
+    <header>
+      <h6>FT</h6>
+      <a href="index.html"><h5 id="logo">Food for Thought</h5></a>
+      <a href="post-suggestion.html"><button>New post +</button></a>
+    </header>
+
+    <h2 id="own_post">Share your own recipes!</h2>
+
+    <form id="postsugg">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="post_title" required />
+      <label for="username">Username</label>
+      <input type="text" name="username" id="post_username" required />
+      <label for="Udsnit">Give your post an intro</label>
+      <textarea name="Udsnit" id="post_udsnit" required></textarea>
+      <label for="content">Write your post here</label>
+      <textarea name="content" id="post_content" required></textarea>
+      <input type="submit" value="Publish" />
+    </form>
+
+    <p class="hidden">
+      Thank you for your contribution! We will review the post as soon as
+      possible.
+    </p>
+
+    <script src="post-suggestion.js"></script>
+  </body>
+</html>

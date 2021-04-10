@@ -1,0 +1,341 @@
+/* RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CODE */
+
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* FRONT PAGE STYLING */
+
+body {
+  margin-top: 30px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 100px;
+  border-bottom: 2px solid black;
+}
+
+h5#logo {
+  font-family: playfair Display;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+header h6 {
+  font-family: playfair Display;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 7px;
+  position: sticky;
+  margin-left: 130px;
+}
+
+a button {
+  font-family: lato;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 130px;
+  background-color: #95ebc0;
+  border: none;
+}
+
+a button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main {
+  margin-right: 130px;
+  margin-left: 130px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+  margin-bottom: 130px;
+}
+
+article {
+  border: 1.5px solid black;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  height: 270px;
+}
+
+article h2 {
+  font-family: playfair display;
+  font-size: 25px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+article h3 {
+  font-family: lato;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+article h4 {
+  font-family: lato;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+article p {
+  font-family: lato;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+article:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* POST SUGGESTION PAGE STYLING */
+
+p.hidden {
+  display: none;
+}
+
+form#postsugg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-family: lato;
+  font-weight: 300;
+  margin-bottom: 150px;
+}
+
+form#postsugg label {
+  font-size: 15px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 300px;
+  align-self: center;
+  margin-top: 50px;
+  font-family: lato;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 17px;
+  background-color: #95ebc0;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type="text"] {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
+  min-height: 15 px;
+  padding: 15px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-family: lato;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  min-height: 250px;
+  padding: 15px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-family: lato;
+}
+
+h2#own_post {
+  font-family: playfair display;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+/* ARTICLE PAGE STYLING */
+
+div.article {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+div.article h1 {
+  font-family: playfair display;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+div.article h2 {
+  font-family: lato;
+  font-weight: 300;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+div.article h3 {
+  font-family: lato;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+div.article p {
+  font-family: lato;
+  line-height: 1.5;
+  /* font-weight: 300; */
+  font-size: 18px;
+  padding-bottom: 40px;
+}

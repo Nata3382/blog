@@ -300,6 +300,14 @@ h2#own_post {
   font-size: 40px;
 }
 
+p.submitted {
+  font-family: lato;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 150px;
+  font-size: 20px;
+}
+
 /* ARTICLE PAGE STYLING */
 
 div.article {
@@ -311,6 +319,7 @@ div.article h1 {
   font-family: playfair display;
   text-align: center;
   margin-top: 100px;
+  line-height: 1.5;
   margin-bottom: 50px;
   font-size: 40px;
 }
@@ -320,6 +329,7 @@ div.article h2 {
   font-weight: 300;
   padding-bottom: 40px;
   text-align: center;
+  line-height: 1.5;
 }
 
 div.article h3 {
@@ -338,4 +348,29 @@ div.article p {
   /* font-weight: 300; */
   font-size: 18px;
   padding-bottom: 40px;
+}
+
+div#linebreak {
+  margin-top: 40px;
+  border-bottom: 1.5px solid black;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+h4.comment_content {
+  text-align: center;
+  font-family: lato;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+h5.comment_username {
+  text-align: center;
+  font-family: lato;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 10px;
+  margin-bottom: 10px;
 }

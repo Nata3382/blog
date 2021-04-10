@@ -26,18 +26,19 @@ function showPost(data) {
   document.querySelector("div.article h3").textContent = data.Udsnit;
   document.querySelector("div.article p").textContent = data.content;
 
-  // const template = document.querySelector(".commentTemplate").content;
+  const template = document.querySelector(".commentTemplate").content;
 
-  // data.comments.array.forEach((comment) => {
-  //   console.log(comment);
-  //   const clone = template.cloneNode(true);
-  //   clone.querySelector("h3").textContent = comments.content;
-  //   clone.querySelector("p").textContent = commments.username;
-  //   document.querySelector(".commentList").appendChild(clone);
-  // });
-  // if (data.comments.length === 0) {
-  //   const clone = template.cloneNode(true);
-  //   clone.querySelector("h3").textContent = "No one has commented on this post";
-  //   document.querySelector(".commentList").appendChild(clone);
-  // }
+  data.comments.array.forEach((comment) => {
+    console.log(comment);
+    const clone = template.cloneNode(true);
+    clone.querySelector("h5.comment_username").textContent = comments.content;
+    clone.querySelector("h4.comment_content").textContent = commments.username;
+    document.querySelector(".commentList").appendChild(clone);
+  });
+  if (data.comments.length === 0) {
+    const clone = template.cloneNode(true);
+    clone.querySelector("h5.comment_username").textContent =
+      "No one has commented on this post";
+    document.querySelector(".commentList").appendChild(clone);
+  }
 }

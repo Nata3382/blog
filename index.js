@@ -24,6 +24,7 @@ function showPosts(posts) {
     copy.querySelector("h2").textContent = post.title;
     copy.querySelector("h3").textContent = post.username;
     copy.querySelector("h4").textContent = post.Udsnit;
+    copy.querySelector("a.open").href = `article.html?article=${post._id}`;
 
     document.querySelector("main").appendChild(copy);
   });

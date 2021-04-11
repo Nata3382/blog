@@ -1,6 +1,6 @@
 const searchParams = new URLSearchParams(window.location.search);
 
-const articleId = urlParams.get("article");
+const articleId = searchParams.get("article");
 
 fetch("https://kea21-ed2b.restdb.io/rest/post/" + articleId, {
   method: "GET",

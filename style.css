@@ -350,12 +350,12 @@ div.article p {
   padding-bottom: 40px;
 }
 
-div#linebreak {
+div.linebreak {
   margin-top: 40px;
   border-bottom: 1.5px solid black;
   margin-left: 150px;
   margin-right: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 h4.comment_content {
@@ -373,4 +373,32 @@ h5.comment_username {
   font-weight: 300;
   font-size: 10px;
   margin-bottom: 10px;
+}
+
+h2.leave_comment {
+  font-family: Playfair display;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+form.comment_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin-right: 400px;
+  margin-left: 400px;
+  font-family: lato;
+  font-weight: 300;
+  margin-bottom: 150px;
+}
+
+textarea.leave_content {
+  min-height: 200px;
+  margin-top: 20px;
+}
+
+label.username_comment {
+  padding-bottom: 10px;
 }

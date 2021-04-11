@@ -38,14 +38,30 @@
       </p>
     </div>
 
-    <div id="linebreak"></div>
+    <div class="linebreak"></div>
 
     <template class="commentTemplate">
       <h5 class="comment_username">username</h5>
       <h4 class="comment_content">content</h4></template
     >
 
-    <div class="commentList"></div>
+    <section class="commentList"></section>
+
+    <div class="linebreak"></div>
+
+    <h2 class="leave_comment">Leave a comment</h2>
+
+    <form class="comment_form">
+      <label for="username_comment" class="username_comment">Username</label>
+      <input type="text" name="username_comment" required />
+      <textarea
+        name="leave_content"
+        placeholder="Write your comment here"
+        required
+        class="leave_content"
+      ></textarea>
+      <input type="submit" value="Publish" />
+    </form>
 
     <script src="article.js"></script>
   </body>

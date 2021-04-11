@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 
+form.elements.username.focus();
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(form.elements.title.value);
